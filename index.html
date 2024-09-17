@@ -5,23 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Sinks R Us - Modern Website</title> 
     <link rel="stylesheet" href="styles.css"> 
+
 </head> 
+
 <body> 
+    <div id="page-wrapper">
     <header> 
+        <div class="name">
+            <p>Sinks R Us</p>
+          </div>
         <nav> 
             <ul> 
                 <li><a href="#home">Home</a></li> 
                 <li><a href="#about">About Us</a></li> 
                 <li><a href="#type">Types of Sinks</a></li> 
-                <li><a href="#feature">Features</a></li> 
+                <li><a href="#featured">Features</a></li> 
                 <li><a href="#contact">Contact Us</a></li> 
             </ul> 
         </nav> 
     </header> 
     <main> 
+        <div class="container"></div>
         <section id="home" class="hero"> 
             <h1>Sinks R Us</h1> 
             <p>Your one-stop shop for all types of sinks</p> 
+            <form id="form" action="home">
+            <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Avail Now!" class="btn" />
+        </form>
         </section> 
         <section id="about" class="features"> 
             <div class="feature"> 
@@ -37,14 +54,22 @@
                 <p>Explore our extensive range of sinks, including undermount, farmhouse, and vessel sinks. Each type comes with its own unique features and benefits to match your kitchen or bathroom design.</p> 
             </div> 
         </section> 
-        <section id="feature" class="call-to-action"> 
+        <section id="featured" class="call-to-action"> 
+            <div class="feature"> 
             <img src="images/sink3.jpeg" alt="Sink Features"> 
             <h2>Features and Benefits</h2> 
             <p>Our sinks come with a range of features, including easy-to-clean surfaces, scratch resistance, and various styles to complement your decor. Learn more about what makes our sinks stand out.</p> 
+            </div>
         </section> 
     </main> 
     <footer> 
-        <p>&copy; 2024 Sinks R Us</p> 
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        <span>2024 Sinks R Us</span> 
     </footer> 
+</div>
 </body> 
 </html>
