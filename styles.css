@@ -60,6 +60,7 @@ body {
     "n f f" 115px /1fr 3fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    flex-wrap: wrap;
 }
 
 #platform h2{
@@ -99,6 +100,7 @@ body {
     color: #324fad;
     display: flex;
     font-size: 100px;
+    flex-wrap: wrap;
 
 }
 #pesbok p{
@@ -113,6 +115,7 @@ body {
     color: #c74953;
     display: flex;
     font-size: 100px;
+    flex-wrap: wrap;
 }
 
 #insta{
@@ -133,6 +136,7 @@ body {
     display: grid;
     grid-template-rows: 2fr 1fr;
     background-color:#D2E0FB;
+    flex-wrap: wrap;
 }
 
 #home h1 {
@@ -160,6 +164,7 @@ body {
     display: grid;
     grid-template-rows: repeat(45, 1fr);
     position: fixed;
+    flex-wrap: wrap;
     
 }
 
@@ -276,6 +281,7 @@ body {
     margin-right: auto;
     border-color: #405086;
     border-style: groove;
+    flex-wrap: wrap;
     
 }
 .view{
@@ -319,6 +325,7 @@ body {
     border-radius: 20px;
     background-color: #ebece9cb;
     position: relative;
+    flex-wrap: wrap;
 }
 
 #about h2 {
@@ -355,6 +362,7 @@ body {
   border-radius: 20px;
   background-color: #cec4b1;
   position: relative;
+  flex-wrap: wrap;
 }
 
 #type h2 {
@@ -391,6 +399,7 @@ body {
   border-radius: 20px;
   background-color: #d4d4b5;
   position: relative;
+  flex-wrap: wrap;
 }
 
 #featured h2 {
@@ -409,6 +418,7 @@ body {
     grid-template-columns: repeat(3, 2fr);
     place-items: center;
     width: 80vw;
+    flex-wrap: wrap;
 }
 .privacy{
     grid-row: 5/7 ;
@@ -475,7 +485,7 @@ body {
     font-weight: 700;
   }
 
-@media screen and (max-width: 377px) {
+@media screen and (max-width: 377px) and (orientation: portrait) {
     #form{
         padding-left: 25%;
     }
@@ -522,6 +532,7 @@ body {
         "n f f" 115px /1fr 3fr 1fr;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
+        flex-wrap: wrap;
     }
     #pesbok p{
         font-weight: 700;
